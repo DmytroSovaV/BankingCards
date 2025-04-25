@@ -1,0 +1,57 @@
+.interests-section{
+    .div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    &__items{
+        margin-top: 80px;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        flex-shrink: 1;
+    }
+    .swiper-slide{
+        flex-shrink: 1;
+    }
+    &__item-desc{
+        border-radius: 50px;
+        cursor: pointer;
+        border: 2.02px solid rgba(255, 245, 238, 0.042);
+        background: linear-gradient(104.59deg, rgba(255, 255, 255, 0.099) 0.76%, rgba(255, 255, 255, 0.0768) 32.78%, rgba(255, 255, 255, 0.033) 69.11%, rgba(255, 255, 255, 0.021) 99%) border-box,
+        radial-gradient(135.33% 135.33% at 5.71% -44.13%, #363636 0%, rgba(26, 26, 26, 0.27) 100%) padding-box;
+        color: white;
+        padding: 20px;
+        @media screen and (min-width:$bp-tablet) {
+            padding: 42px;
+        }
+        display: inline-block;
+    }
+    &__item img:hover ~.interests-section__item-desc,
+    &__item-desc:hover{ 
+        background-color: transparent;
+        box-shadow: 0 12px 30px rgba(255, 255, 255, 0.4);
+            transition: box-shadow 0.3s ease;
+    }
+    &__item-desc{
+        position: absolute;
+        content: "";
+        bottom: 20px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    img{
+        max-width: 315px;
+        @media screen and (min-width:$bp-desktop) {
+            max-width: 440px;
+        }
+        // max-height: 630px;
+        border-radius: 50px;
+    }
+}

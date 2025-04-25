@@ -1,0 +1,55 @@
+.special-propose{
+    padding: 0 10px;
+    margin-top: 100px;
+    background-image: url(/img/special-propose.png);
+    // height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 260px;
+    background-position-x: center;
+    text-align: center;
+    height: 100vh;
+    @media screen and (min-width:$bp-tablet) {
+        height: 112vw;
+        margin-top: 250px;
+        background-position: top top;
+        text-align: left;
+    }
+    padding: 0 -24px 0 0;
+    &__container{
+        display: block;
+        @media screen and (min-width:$bp-tablet) {
+            display: flex;
+            
+        }
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2{
+            line-height: normal;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 18px;
+            @media screen and (min-width:$bp-tablet) {
+                max-width: 526px;
+                font-size: 24px;
+            }
+        }
+    }
+    &__desc{
+        display: flex;
+        padding-top: 30px;
+        flex-direction: column;
+        gap: 25px;
+        @media screen and (min-width:$bp-tablet) {
+            gap: 55px;
+        }
+
+
+        .button{
+            display: inline-block;
+            text-align: center;
+        }
+    }
+}

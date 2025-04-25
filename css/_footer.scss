@@ -1,0 +1,82 @@
+.footer{
+    padding: 0 10px;
+    a{
+        color: var(--secondary-color);
+        font-weight: 500;
+        font-size: 18px;
+    }
+    a:hover{
+        color: var(--main-color);
+        transition: 1s all ease-out;
+    }
+    &__name-menu{
+        text-transform: uppercase;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding-bottom: 160px;
+        gap: 25px;
+        @media screen and (min-width:$bp-tablet){
+            flex-direction: row;
+            gap: 55px;
+        }
+
+    }
+    &__logo-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        p{
+            max-width: 100%;
+            @media screen and (min-width:$bp-tablet){
+                max-width: 313px;
+                text-align: center;
+                
+            }
+            color: var(--secondary-color);
+        }
+    }
+    &__logo{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        text-align-last: left;
+        @media screen and (min-width:$bp-tablet) {
+            gap: 100px;
+            flex-direction: row;
+            text-align: left;
+            
+        }
+    }
+    &__quick-links,
+    &__services,
+    &__insights{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__copyright{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        hr{
+            color: var(--main-color);
+        }
+    }
+}

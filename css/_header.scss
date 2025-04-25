@@ -1,0 +1,59 @@
+@import 'variables';
+.header-section{
+    
+&__container{
+    @media screen and (min-width:$bp-desktop) {
+        gap: 130px;
+        align-items: center ;
+        justify-content: center;
+    }
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.burger-menu{
+    display: flex;
+    @media screen and(min-width:$bp-tablet) {
+        display: none;
+    }
+}
+&__logo{
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    h1{
+        font-weight: 600;
+        color: var(--main-color);
+
+    }
+}
+&__menu-1,
+&__menu-2{
+    display: none;
+    @media screen and(min-width:$bp-tablet) {
+        
+        display: flex;
+        gap: 34px;
+    }
+       
+}
+&__menu-1 li,
+&__menu-2 li {
+ border-bottom: 1px solid transparent;
+}
+&__menu-1 li:hover,
+&__menu-2 li:hover{
+    border-bottom: 1px solid var(--main-color);
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+
+    
+    // transform: translateY(-2px);
+    transition: all 0.4s ease;
+}
+}

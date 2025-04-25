@@ -1,0 +1,37 @@
+.FAQ{
+    padding: 0 10px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // text-align: center;
+        cursor: pointer;
+        h2{
+            text-align: center;
+        }
+    }
+    &__question-container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 16px;
+        margin-bottom: 50px;
+    }
+    // &__question:hover &__question-container{
+    //     background-color:rgba(255, 255, 255, 0.38);
+    // }
+    &__question:hover ~ &__answer{
+        display: flex;
+        transition: 10s all ease;
+    }
+    &__question:hover ~&__question-container{
+        background-color: rgba(255, 255, 255, 0.38);
+        z-index: 10;
+    }
+    &__answer{
+        display: none;
+        max-width: 820px;
+    }
+}

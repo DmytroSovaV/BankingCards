@@ -1,0 +1,52 @@
+@import'variables';
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    color: var(--main-color);
+    // padding: 12px;
+}
+a{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+h2{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.5;
+    @media screen and (min-width:$bp-tablet) {
+        font-size: 100px;
+        
+    }
+    
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.section-name{
+    font-size: 18px;
+    color:var(--secondary-color);
+}
+.visually-hiden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
