@@ -149,7 +149,7 @@ ul {
 .hero-section {
   padding: 50px 10px 0px 10px;
   text-align: center;
-  background-image: url('../img/hero-BG.png');
+  background-image: "../img/hero-BG.png";
   background-repeat: no-repeat;
   background-size: cover;
   height: 112vh;
@@ -457,7 +457,7 @@ button:hover {
   }
 }
 .our-uniqueness-section__bg {
-  background-image: url(/img/honest-background.png);
+  background-image: url("./img/honest-background.png");
   height: 100vw;
   background-color: transparent;
 }
@@ -537,7 +537,7 @@ button:hover {
 }
 
 .unique-background {
-  background-image: url("/img/honest-background.png");
+  background-image: url("../img/honest-background.png");
   /* твоє фонове зображення */
   background-size: cover;
   background-position: center;
@@ -628,7 +628,7 @@ button:hover {
 .special-propose {
   padding: 0 10px;
   margin-top: 100px;
-  background-image: url('../img/special-propose.png');
+  background-image: url("../img/special-propose.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 260px;
@@ -691,31 +691,31 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
 }
 .FAQ__container h2 {
   text-align: center;
+}
+.FAQ__question {
+  padding: 25px;
 }
 .FAQ__question-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
   margin-bottom: 50px;
 }
-.FAQ__question:hover ~ .FAQ__answer {
-  display: flex;
-  transition: 10s all ease;
-}
 .FAQ__question:hover ~ .FAQ__question-container {
   background-color: rgba(255, 255, 255, 0.38);
-  z-index: 10;
 }
 .FAQ__answer {
-  display: none;
+  padding: 25px;
   max-width: 820px;
+}
+
+.hidden {
+  display: none;
 }
 
 .footer {

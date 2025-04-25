@@ -9,28 +9,35 @@
             text-align: center;
         }
     }
+    &__question{
+        padding: 25px;
+
+    }
     &__question-container{
         display: flex;
         flex-direction: column;
         gap: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 25px;
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: 16px;
         margin-bottom: 50px;
     }
     // &__question:hover &__question-container{
     //     background-color:rgba(255, 255, 255, 0.38);
     // }
-    &__question:hover ~ &__answer{
-        display: flex;
-        transition: 10s all ease;
-    }
+    // &__question:hover ~ &__answer{
+    //     display: flex;
+    //     transition: 10s all ease;
+    // }
     &__question:hover ~&__question-container{
         background-color: rgba(255, 255, 255, 0.38);
-        z-index: 10;
+        // z-index: 10;
     }
     &__answer{
-        display: none;
+        // display: none;
+        padding: 25px;
         max-width: 820px;
     }
+}
+.hidden{
+    display: none;
 }
