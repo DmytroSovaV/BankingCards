@@ -149,7 +149,7 @@ ul {
 .hero-section {
   padding: 50px 10px 0px 10px;
   text-align: center;
-  background-image: "../img/hero-BG.png";
+  background-image: url("../img/hero-BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 112vh;
