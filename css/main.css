@@ -628,7 +628,7 @@ button:hover {
 .special-propose {
   padding: 0 10px;
   margin-top: 100px;
-  background-image: url('./img/special-propose.png');
+  background-image: url('/img/special-propose.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 260px;
