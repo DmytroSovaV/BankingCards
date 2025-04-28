@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> -->
     <title>Banking Cards</title>
@@ -12,7 +14,7 @@
 <body>
     <header class="header-section">
         <div class="wrapper">
-            <div class="header-section__container">
+            <div  data-aos="zoom-in-right" data-aos-duration="4000" class="header-section__container">
                 <ul class="header-section__menu-1">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -35,18 +37,19 @@
                 </div>
             </div>
         </div>
-            <section class="hero-section">
+            <section  data-aos="zoom-in-right" class="hero-section">
                 <div class="wrapper">
-                    <div class="hero-section__container">
-                        <h2>The first Employee <br>
+                    <div  data-aos="fade-up"
+     data-aos-duration="3000" class="hero-section__container">
+                        <h2 data-aos="zoom-in-right">The first Employee <br>
                             Consumer Card</h2>
-                            <p>
+                            <p data-aos="zoom-in-right">
                                 Higher perk adoption,instant expense management, <br> 
                                 simple benefits access and much more
                                 
                             </p>
                             <a href="#">
-                                <button class="button" type="button">
+                                <button data-aos="zoom-in-right" class="button" type="button">
                                     Request a Demo
                                 </button>
                             </a>
@@ -57,7 +60,8 @@
     <main>
         <section class="our-clients-section">
             <div class="wrapper">
-                <div class="our-clients-section__container">
+                <div  data-aos="fade-up"
+     data-aos-duration="3000" class="our-clients-section__container">
                     <h2 class="section-name">Clients Includes</h2>
                     <ul class="our-clients-section__items">
                         <li>
@@ -73,11 +77,11 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section  class="features">
             <div class="wrapper flex">
                 <h2 class="section-name">Features</h2>
-                <div class="features__container">
-                    <div class="features__powerful">
+                <div  data-aos="fade-up" data-aos-duration="5000" class="features__container">
+                    <div data-aos="zoom-in" class="features__powerful">
                         <p class="features__name">Powerful <br>Features</p>
                         <ul class="features__items">
                             <li><img src="./img/tel.svg" alt=""></li>
@@ -100,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="features__for-family">
+                <div data-aos="zoom-in" class="features__for-family">
                     <div class="features-family-text">
                         <p class="features__name">
                             My Family
@@ -119,19 +123,21 @@
         </section>
         <section class="our-uniqueness-section">
             <div class="wrapper">
-                <div class="our-uniqueness-section__container">
+                <div data-aos="fade-up"data-aos-duration="5000" class="our-uniqueness-section__container">
                     <p class="section-name">Our Uniqueness</p>
-                    <h2>Honest Pricing, No Unseen Charges.</h2>
+                    <h2 data-aos="fade-up"
+     data-aos-duration="4000">
+     Honest Pricing, No Unseen Charges.</h2>
                     <div class="our-uniqueness-section__fees">
                         <div class="our-uniqueness-section__column1">
-                            <div class="annual absolute">
+                            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="annual absolute">
                                 <img src="./img/fees.svg" alt="">
                                 <p class="fees-desc">
                                     No Annual <br>
                                     Fees.
                                 </p>
                             </div>
-                            <div class="joining">
+                            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="joining">
                                 <img src="./img/no-fees.svg" alt="">
                                 <p class="fees-desc">
                                     No Joining <br> Fees.
@@ -141,7 +147,7 @@
                         <div class="our-uniqueness-section__column2">
                             <img src="./img/card-vertical.png" alt="">
                         </div>
-                        <div class="our-uniqueness-section__column3">
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="our-uniqueness-section__column3">
                             <img src="./img/fees.svg" alt="">
                             <p class="fees-desc">
                                 No Rewards <br> Redemption <br> Fees.
@@ -155,16 +161,16 @@
             <div class="wrapper">
                 <div class="interests-section__container">
                     <div class="div">
-                        <h2>
+                        <h2 data-aos="fade-up" data-aos-duration="5000">
                             Are Your Saving is <br>
                         Interesting
                         </h2>
-                         <p class="section-desc">
+                         <p data-aos="fade-up" data-aos-duration="5000" class="section-desc">
                             Let your money make more money with up to 4.75% AER/Gross (variable) <br>
                             interest on savings. Paid every single day.
                         </p>
                     </div>
-                    <div class="swiper">
+                    <div data-aos="fade-up" data-aos-duration="5000" class="swiper">
                         <div class="interests-section__items swiper-wrapper">
                             <div class="interests-section__item swiper-slide">
                                 <img src="./img/adventure.jpg" alt="">
@@ -225,9 +231,9 @@
                 </div>
             </div>
         </section>
-        <section class="special-propose">
+        <section data-aos="fade-up" data-aos-duration="5000" class="special-propose">
             <div class="wrapper">
-                <di&v class="special-propose__container">
+                <div class="special-propose__container">
                     <h2>
                         Specially forged <br>
                     for you
@@ -245,10 +251,9 @@
         </section>
         <section class="FAQ">
             <div class="wrapper">
-                <div class="FAQ__container">
-                    <h2>Frequently <br>
-                    asked questions</h2>
-                    <div class="FAQ__question-container">
+                <div data-aos="fade-up" data-aos-duration="5000" class="FAQ__container">
+                    <h2>Frequently <br> asked questions</h2>
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -263,7 +268,7 @@
                         </p>
 
                     </div>
-                    <div class="FAQ__question-container">
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -278,7 +283,7 @@
                         </p>
 
                     </div>
-                    <div class="FAQ__question-container">
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -293,7 +298,7 @@
                         </p>
 
                     </div>
-                    <div class="FAQ__question-container">
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -308,7 +313,7 @@
                         </p>
 
                     </div>
-                    <div class="FAQ__question-container">
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -323,7 +328,7 @@
                         </p>
 
                     </div>
-                    <div class="FAQ__question-container">
+                    <div  data-aos="fade-up" class="FAQ__question-container">
                         <p class="FAQ__question">
                             Morbi fringilla metus ac lacus dapibus.
                         </p>
@@ -342,7 +347,7 @@
             </div>
         </section>
      </main>
-    <footer class="footer">
+    <footer data-aos="fade-up" data-aos-duration="5000"  class="footer">
         <div class="wrapper">
             <div class="footer__container">
                 <div class="footer__logo-container">
@@ -391,5 +396,11 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="swiper.js"></script>
 <script src="faq-toggler.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init();
+    });
+</script>
 </body>
 </html>
